@@ -6,14 +6,14 @@ services:
     #  dockerfile: Dockerfile
     #  context: ./juice-shop
     ports:
-        - '3000:3000'
+        - '3001:3000'
 
   nginx-reverse-proxy:
     #build:
     #  dockerfile: Dockerfile
     #  context: ./nginx-reverse-proxy
     ports:
-      - '80:80'
+      - '81:80'
     ipc: host
     image: checkpoint/infinity-next-nginx
     volumes:
