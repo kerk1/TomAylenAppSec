@@ -1,8 +1,8 @@
 upstream juiceshop_host {
-  server juice-shop:3000;
+  server 13.70.194.90:3000;
 }
 server {
-  server_name juiceshop.local;
+  server_name 13.70.194.90;
   listen 80;
   location / {
     proxy_pass 13.70.194.90;
