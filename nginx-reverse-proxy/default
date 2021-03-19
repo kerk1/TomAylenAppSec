@@ -5,10 +5,10 @@ server {
   server_name 13.70.194.90;
   listen 80;
   location / {
-    proxy_pass 13.70.194.90;
+    proxy_pass http://13.70.194.90;
   }
   location /socket.io {
-    proxy_pass 13.70.194.90;
+    proxy_pass http://13.70.194.90;
     proxy_http_version 1.1;
     proxy_set_header Upgrade $http_upgrade;
     proxy_set_header Connection "Upgrade";
