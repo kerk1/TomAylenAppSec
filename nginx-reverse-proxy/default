@@ -1,5 +1,5 @@
 upstream juiceshop_host {
-  server 13.70.194.90:3000;
+  server juice-shop:3000;
 }
 server {
   server_name 13.70.194.90;
